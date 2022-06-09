@@ -54,13 +54,13 @@
         <div class="form-group">
             <label for="kode">Kode</label>
             <div>
-                <textarea class="form-control" name="kode" id="kode" r></textarea>
+                <input type="text" class="form-control" name="kode" id="kode" required>
             </div>
         </div>
         <div class="form-group">
             <label for="jenis">Jenis</label>
             <div>
-                <textarea class="form-control" name="jenis" id="jenis" r></textarea>
+                <input type="text" class="form-control" name="jenis" id="jenis" required>
             </div>
         </div>
         <div class="form-group">
@@ -72,7 +72,7 @@
         <div class="form-group">
             <label for="nama_latin">Nama Latin</label>
             <div>
-                <input type="text" class="form-control" name="nama_latin" id="nama_latin" required></input>
+                <input type="text" class="form-control" name="nama_latin" id="nama_latin" required>
             </div>
         </div>
         <div class="form-group">
@@ -84,49 +84,49 @@
         <div class="form-group">
             <label for="kerajaan">Kerajaan</label>
             <div>
-                <input class="form-control" name="kerajaan" id="kerajaan"></input>
+                <input class="form-control" name="kerajaan" id="kerajaan">
             </div>
         </div>
         <div class="form-group">
             <label for="ordo">Ordo</label>
             <div>
-                <input type="text" class="form-control" name="ordo" id="ordo"></input>
+                <input type="text" class="form-control" name="ordo" id="ordo">
             </div>
         </div>
         <div class="form-group">
             <label for="famili">Famili</label>
             <div>
-                <input type="text" class="form-control" name="famili" id="famili"></input>
+                <input type="text" class="form-control" name="famili" id="famili">
             </div>
         </div>
         <div class="form-group">
             <label for="genus">Genus</label>
             <div>
-                <input type="text" class="form-control" name="genus" id="genus"></input>
+                <input type="text" class="form-control" name="genus" id="genus">
             </div>
         </div>
         <div class="form-group">
             <label for="spesies">Spesies</label>
             <div>
-                <input type="text" class="form-control" name="spesies" id="spesies"></input>
+                <input type="text" class="form-control" name="spesies" id="spesies">
             </div>
         </div>
         <div class="form-group">
             <label for="filum">Filum</label>
             <div>
-                <input type="text" class="form-control" name="filum" id="filum"></input>
+                <input type="text" class="form-control" name="filum" id="filum">
             </div>
         </div>
         <div class="form-group">
             <label for="bangsa">Bangsa</label>
             <div>
-                <input type="text" class="form-control" name="bangsa" id="bangsa"></input>
+                <input type="text" class="form-control" name="bangsa" id="bangsa">
             </div>
         </div>
         <div class="form-group">
             <label for="kelas">Kelas</label>
             <div>
-                <input type="text" class="form-control" name="kelas" id="kelas"></input>
+                <input type="text" class="form-control" name="kelas" id="kelas">
             </div>
         </div>
         <div class="form-btn text-center">

@@ -1,8 +1,10 @@
 <?php 
 require 'php/function.php';
 
-$daftar_flora = query("SELECT * FROM daftar_flora_fauna WHERE jenis = 'Flora'");
+$daftar_flora = query("SELECT * FROM daftar_flora_fauna WHERE jenis = 'Flora' AND kode ='FA'");
 $daftar_fauna = query("SELECT * FROM daftar_flora_fauna WHERE jenis = 'Fauna'");
+
+
 
 // if(isset($_GET['cari'])) {
 //   $keyword = $_GET['keyword'];
@@ -44,11 +46,11 @@ $daftar_fauna = query("SELECT * FROM daftar_flora_fauna WHERE jenis = 'Fauna'");
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <form class="d-flex" method="get" role="search">
+      <!-- <form class="d-flex" method="get" role="search">
         <div class="form-group">
           <input class="form-control me-2" type="search" name="keyword" placeholder="Search" aria-label="Search" autofocus>
         </div>
-      </form>
+      </form> -->
 
       <a class="btn-login fw-semibold text-dark shadow-sm ms-4" href="php/login.php" role="button">LOG IN </a>
 

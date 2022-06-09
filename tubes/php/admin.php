@@ -139,9 +139,9 @@
                     </td>
                     <td>
                         <div class=" wrapper-opt-btn">
-                            <a href="ubah.php?id=<?= $fkoraFauna['id']; ?>">
-                                <button type="button" class="btn btn-primary btn-sm">
-                                    <i class="fas fa-edit"></i><br>Ubah
+                            <a href="detail-admin.php?id=<?= $floraFauna['id']; ?>">
+                                <button type="button" class="btn btn-info btn-sm text-white">
+                                    <i class="fas fa-detail"></i><br>Detail
                                 </button>
                             </a>
                             <a href="hapus.php?id=<?= $floraFauna['id'] ?>" onclick="return confirm('Hapus Data?')">

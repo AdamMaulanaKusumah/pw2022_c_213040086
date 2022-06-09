@@ -22,6 +22,9 @@ $floraFauna = query("SELECT * FROM daftar_flora_fauna WHERE id = '$id'")[0];
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
 
+    <!-- Fontawesome js -->
+    <link rel="stylesheet" href="../assets/css/fontawesome_6.1.css">
+
     <!-- Custom Style CSS -->
     <link rel="stylesheet" href="../assets/css/detail.css?v2">
 </head>
@@ -91,16 +94,26 @@ $floraFauna = query("SELECT * FROM daftar_flora_fauna WHERE id = '$id'")[0];
                                 <div class="col-8"><?= $floraFauna['kelas']; ?></div>
                             </div>
                         </div>
+                        <div class="card-footer">
+                            <a href="ubah.php?id=<?= $floraFauna['id']; ?>" class="btn btn-warning btn-sm text-white">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <br>
+                                Ubah Data
+                            </a>
+                        </div>
                     </div>
                     </div>
 
                     <div class="text-center my-4">
-                    <a href="../" type="button" class="btn btn-secondary">Kembali</a>
+                    <a href="admin.php" type="button" class="btn btn-secondary">Kembali</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Fontawesome JS -->
+    <script src="../assets/js/fontawesome_6.1.js"></script>
 
      <!-- Bootstrap JS -->
      <script src="../assets/js/bootstrap.bundle.js"></script>

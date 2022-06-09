@@ -73,33 +73,6 @@
             exit;
         }
     }
-    // Hapus Data flora
-    function hapus($id) {
-        $conn = koneksi();
-        mysqli_query($conn, "DELETE FROM flora Where id=$id") or die(mysqli_error($conn));
-        return mysqli_affected_rows($conn);
-    }
-
-
-    // Ubah Data
-    function ubah($data){
-        $conn = koneksi();
-    
-        $id= $data["id"];
-        $gambar = htmlspecialchars($data["gambar"]);
-        $nama = htmlspecialchars($data["nama"]);
-        $jenis = htmlspecialchars($data["jenis"]);
-        
-    
-        $query = "UPDATE flora SET 
-                    gambar= '$gambar',
-                    nama = '$nama',
-                    deskripsi = '$jenis',
-                    WHERE id = $id";
-        mysqli_query($conn, $query) or die(mysqli_error($conn));
-        
-        return mysqli_affected_rows($conn);
-    }
 
     // upload gambar 
     function upload() {
@@ -187,19 +160,60 @@
         return mysqli_affected_rows($conn);
     
     }
-            
-            // // Fungsi untuk menghapus Data flora
-            // function hapus($id_flora) {
-            //     $conn = koneksi();
-            //     mysqli_query($conn, "DELETE FROM flora WHERE id = $id_flora");
-                
-            //     return mysqli_affected_rows($conn);
-            // }
-            //         // Fungsi untuk menghapus Data fauna
-            //         function hapus($id_fauna) {
-            //             $conn = koneksi();
-            //             mysqli_query($conn, "DELETE FROM fauna WHERE id = $id_fauna");
-                        
-            //             return mysqli_affected_rows($conn);
-            // }
+
+    function ubah($data) {
+        $conn = koneksi();
+
+        $id = $data['id'];
+        $nama = htmlspecialchars($data["nama"]);
+        $namaLatin = htmlspecialchars($data["nama_latin"]);
+        $jenis = htmlspecialchars($data["jenis"]);
+        $deskripsi = htmlspecialchars($data["deskripsi"]);
+        $kerajaan = htmlspecialchars($data["kerajaan"]);
+        $ordo = htmlspecialchars($data["ordo"]);
+        $famili = htmlspecialchars($data["famili"]);
+        $genus = htmlspecialchars($data["genus"]);
+        $spesies = htmlspecialchars($data["spesies"]);
+        $filum = htmlspecialchars($data["filum"]);
+        $bangsa = htmlspecialchars($data["bangsa"]);
+        $kelas = htmlspecialchars($data["kelas"]);
+        $kode = htmlspecialchars($data["kode"]);
+        $gambar = htmlspecialchars($data['gambar']);
+        $gambar_lama = htmlspecialchars($data["gambar_lama"]);
+
+        // cek user upload gambar baru atau tidak
+        if($_FILES['gambar']['error'] === 4) {
+            $gambar = $gambar_lama;
+        } else {
+            $gambar = upload();
+        }
+
+        // query update data
+        $query = "UPDATE daftar_flora_fauna
+                SET
+                nama = '$nama',
+                nama_latin = '$namaLatin',
+                gambar = '$gambar',
+                deskripsi = '$deskripsi',
+                kerajaan = '$kerajaan',
+                ordo = '$ordo',
+                famili = '$famili',
+                genus = '$genus',
+                spesies = '$pesies',
+                filum = '$filum',
+                bangsa = '$bangsa',
+                kelas = '$kelas',
+                jenis = '$jenis',
+                kode = '$kode'
+                WHERE id = $id
+                ";
+
+        mysqli_query($conn, $query);
+
+        return mysqli_affected_rows($conn);
+    }
+
+    function hapus() {
+        
+    }
 ?>

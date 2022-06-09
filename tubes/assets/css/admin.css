@@ -1,0 +1,75 @@
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-cta {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.25rem 0;
+}
+
+.add a,
+.logout a {
+  font-weight: bolder;
+  border: 2px solid;
+}
+
+.add a i,
+.logout a i {
+  font-size: 22px;
+}
+
+.search .form-group {
+  margin: 0;
+  text-align: center;
+}
+
+.search .form-control .btn {
+  vertical-align: inherit !important;
+}
+
+.search .form-group .form-control {
+  display: inline-block !important;
+  width: 80% !important;
+  /* margin-right: 0.25; */
+}
+
+/* .logout {
+    left: 7%;
+  } */
+
+/* Table */
+.table th,
+.table td {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+th {
+  background-color: #82ff9d !important;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+td {
+  font-weight: 600;
+}
+
+table img {
+  width: 9.375rem;
+}
+
+.wrapper-opt-btn {
+  width: 11.25rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper-opt-btn button {
+  font-size: 0.75rem;
+  font-weight: 300;
+}

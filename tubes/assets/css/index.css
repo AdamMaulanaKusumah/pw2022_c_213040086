@@ -1,0 +1,72 @@
+/* .h-custom {
+  height: 340px !important;
+} */
+
+/* -----------------
+       HEADER
+--------------------*/
+.btn-login {
+  padding: 4px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: #f8f9fa;
+  border: 1px solid #eee;
+}
+
+.btn-login:hover {
+  background-color: #dee2e6;
+}
+
+/*------------------
+      HERO SECTION
+--------------------*/
+.img-container {
+  width: 100%;
+  height: 480px;
+  position: relative;
+}
+
+.img-container img {
+  width: inherit;
+  height: inherit;
+}
+
+.profile-container {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  bottom: -70px;
+  transform: translate(-50%);
+}
+
+.profile-container img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.home-section .title {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.title h6 {
+  color: #281e5a;
+}
+
+.title h6 span {
+  color: #c6c6c6;
+}
+
+.img-wrap img {
+  width: 320px;
+  height: 200px;
+  margin: 32px 0;
+}
+
+footer {
+  background-color: #83bd75;
+  /* height: 56px; */
+}

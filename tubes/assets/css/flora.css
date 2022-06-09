@@ -1,0 +1,16 @@
+.text-gray {
+  color: #6c757d;
+}
+
+.card-body .truncate {
+  height: 100px;
+  margin: 16px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+footer {
+  background-color: #83bd75;
+  /* height: 56px; */
+}
